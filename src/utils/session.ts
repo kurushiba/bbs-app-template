@@ -25,7 +25,7 @@ export async function verifySession() {
     return null;
   }
 
-  return { isAuth: true, userId: session.userId };
+  return { isAuth: true, userId: session.userId as string };
 }
 
 export async function deleteSession() {
